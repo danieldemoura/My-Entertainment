@@ -145,7 +145,7 @@ section:nth-child(5) {
 #card-main .card-entertainment ul {
     display: flex;
     gap: 16px;
-
+    
     margin-top: 24px;
     width: 570px;
 }
