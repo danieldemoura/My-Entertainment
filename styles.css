@@ -7,6 +7,21 @@
     text-decoration: none;
 }
 
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #041421;
+}
+
+html::-webkit-scrollbar-track {
+    background-color:#041421;
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background:#C91842;
+    border-radius: 5px;
+}
+
 body {
     background-image: url(./assets/background.jpg);
     background-attachment: fixed;
@@ -19,9 +34,9 @@ body {
 }
 
 h1 {
-    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
-    margin-bottom: -51px;
+    margin-bottom: -50px;
     margin-top: 30px;
     text-align: center;
     text-shadow: 1px 0px 4px #C91842;
@@ -67,7 +82,7 @@ header div a {
     display: flex;
     padding: 6px;
 
-   animation: fromTop .8s backwards;
+   animation: fromTop .8s .5s backwards;
 }
 
 header div a:hover {
@@ -79,7 +94,7 @@ header div a img {
     border-radius: 50%;
 }
 
-main {
+main#card-main {
     max-width: 635px;
     width: 90%;
     display: grid;
@@ -120,29 +135,33 @@ section:nth-child(5) {
     animation-delay: 2.5s;
 }
 
-section div {
+#card-main .card-entertainment div {
     background-color: #262629;
     border-radius: 8px;
     padding: 24px 30px 32px 30px;
 }
 
 
-ul {
+#card-main .card-entertainment ul {
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
 
     margin-top: 24px;
+    width: 570px;
 }
 
+#card-main .card-entertainment ul li {
+    display: flex;
+    flex-flow: column;
+    gap: 7px;
+}
 
-ul li img {
+#card-main .card-entertainment ul li img {
     height: 185px;
     border-radius: 8px;
 }
 
-ul li a {
-    display: block;
+#card-main ul li a {
     color: white;
     background-color: #C91842;
     text-align: center;
